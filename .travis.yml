@@ -115,7 +115,7 @@ install:
 script:
 - bii init
 - ./bootstrap.sh $BII_BOOST_TRACK 
-- ./generate $BII_BOOST_TRACK --no-publish STABLE --ci-build
+- ./generate $BII_BOOST_TRACK --no-publish --ci-build
 - bii find --update
 - bii cpp:configure $configure_params || bii cpp:configure $configure_params
 - bii cpp:build
